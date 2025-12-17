@@ -7,151 +7,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo">FilmCatalog</div>
-    <nav>
-      <a href="#catalog">Каталог</a>
-      <a href="#favorites">Избранное</a>
-      <a href="#playlists">Плейлисты</a>
-    </nav>
-  </header>
-
-  <section class="controls">
-    <input type="text" id="search" placeholder="Поиск фильмов или сериалов..." />
-    <select id="genre-filter">
-      <option value="all">Все жанры</option>
-      <option value="action">Боевик</option>
-      <option value="drama">Драма</option>
-      <option value="comedy">Комедия</option>
-      <option value="fantasy">Фантастика</option>
-      <option value="thriller">Триллер</option>
-    </select>
-    <button id="add-movie">Добавить фильм</button>
-  </section>
-
+    
   <main>
-    <section id="catalog" class="catalog">
-      <h2>Каталог фильмов и сериалов</h2>
-      <div class="movie-grid">
-        <div class="movie-card">
-          <img src="image/int.webp" alt="poster" />
-          <div class="info">
-            <h3>Интерстеллар</h3>
-            <p class="genre">Фантастика</p>
-            <p class="desc">Космическая одиссея о любви, времени и выживании человечества.</p>
-          </div>
-          <div class="actions">
-            <button class="favorite">В избранное</button>
-            <button class="add-to-playlist">В плейлист</button>
-            <button class="remove">Удалить</button>
-          </div>
-        </div>
 
-        <div class="movie-card">
-          <img src="image/fast.webp" alt="poster" />
-          <div class="info">
-            <h3>Форсаж 1</h3>
-            <p class="genre">Боевик</p>
-            <p class="desc">Полицейский под прикрытием Брайан О’Коннор внедряется в банду гонщиков, чтобы раскрыть банду стритрейсеров.</p>
-          </div>
-          <div class="actions">
-            <button class="favorite">В избранное</button>
-            <button class="add-to-playlist">В плейлист</button>
-            <button class="remove">Удалить</button>
-          </div>
-        </div>
-
-        <div class="movie-card">
-          <img src="image/uik.webp" alt="poster" />
-          <div class="info">
-            <h3>Джон Уик</h3>
-            <p class="genre">Боевик</p>
-            <p class="desc">Профессиональный убийца мстит за гибель своей собаки и кражу машины.</p>
-          </div>
-          <div class="actions">
-            <button class="favorite">В избранное</button>
-            <button class="add-to-playlist">В плейлист</button>
-            <button class="remove">Удалить</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="favorites" class="favorites">
-      <div class="favorites-header">
-        <h2>Избранное</h2>
-      </div>
-      <div class="favorites-grid">
-        <p>Ваши избранные фильмы и сериалы.</p>
-      </div>
-    </section>
-
-    <section id="playlists" class="playlists">
-      <div class="playlist-header">
-        <h2>Мои плейлисты</h2>
-        <button id="create-playlist">Создать плейлист</button>
-      </div>
-
-      <div class="playlist-container">
-        <div class="playlist">
-          <h3>Смотреть позже</h3>
-          <ul>
-            <li>Очень странные дела <button class="remove-item">Удалить</button></li>
-            <li>Во все тяжкие <button class="remove-item">Удалить</button></li>
-          </ul>
-        </div>
-
-        <div class="playlist">
-          <h3>Любимые фильмы</h3>
-          <ul>
-            <li>Властелин Колец: Две Башни <button class="remove-item">Удалить</button></li>
-            <li>Форсаж 1 <button class="remove-item">Удалить</button></li>
-            <li>Матрица <button class="remove-item">Удалить</button></li>
-          </ul>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="footer">
     <p>2025 FilmCatalog | Курсовой проект. Игнатьев Алексей 4321-21</p>
   </footer>
 
-  <div class="modal" id="modal-add-movie">
-    <div class="modal-content">
-      <h2>Добавить фильм</h2>
-      <form>
-        <label>Название</label>
-        <input type="text" placeholder="Введите название" />
-        <label>Жанр</label>
-        <select>
-          <option>Боевик</option>
-          <option>Драма</option>
-          <option>Комедия</option>
-          <option>Фантастика</option>
-        </select>
-        <label>Описание</label>
-        <textarea placeholder="Краткое описание"></textarea>
-        <div class="form-buttons">
-          <button class="save">Сохранить</button>
-          <button class="cancel">Отмена</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <div class="modal" id="modal-create-playlist">
-    <div class="modal-content">
-      <h2>Создать плейлист</h2>
-      <form>
-        <label>Название плейлиста</label>
-        <input type="text" placeholder="Например" />
-        <div class="form-buttons">
-          <button class="save">Создать</button>
-          <button class="cancel">Отмена</button>
-        </div>
-      </form>
-    </div>
-  </div>
+  
+  <script src="src/main.js" type="module"></script>
 </body>
 </html>
